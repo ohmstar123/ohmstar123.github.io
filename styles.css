@@ -148,6 +148,7 @@ nav ul li a:hover::after{
 
 .tab-contents{
     display: none;
+    
 }
 
 .tab-contents.active-tab{
@@ -210,7 +211,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: black;
+    background: #080808;
     width: 60px;
     height: 60px;
     border-radius: 50%;
