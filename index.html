@@ -7,6 +7,12 @@
     <title>Ohm's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/04ee59e42c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('e3HrOXBh35PDR-EDP'); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+        })();
+    </script>
 </head>
 <body>
     <div id="header">
@@ -176,12 +182,13 @@
                     <a href="images/Ohm Resume 2024.pdf" class="btn btn2" target="_blank">Browse My Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form id="contactForm">
                         <input type="text" placeholder="Your Name" name="Name" required>
                         <input type="email" placeholder="Your Email" name="Email" required>
-                        <textarea placeholder="Your Message" name="Message" rows="6"></textarea>
+                        <textarea placeholder="Your Message" name="Message" rows="6" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <div id="formMessage"></div>
                 </div>
             </div>
         </div>
