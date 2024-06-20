@@ -14,6 +14,36 @@ body{
     color: #fff;
 }
 
+/* --------------Back to the top button-------------- */
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: none;
+    color: #66fcf1;
+    cursor: pointer;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+    color: #45a29e;
+}
+
+#backToTopBtn i {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------Home-------------- */
+
 #header{
     width: 100%;
     height: 100vh;
