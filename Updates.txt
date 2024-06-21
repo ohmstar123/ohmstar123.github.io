@@ -2,9 +2,6 @@ What needs to be added:
 
 - Change logo so that it has period at the end
 
-- Get rid of Home from the nav bar because it litterally does nothing (the nav bar is at the top so the home page 
-is already seen, )
-
 - When see more button is clicked, there is a little transition and more projects appear, the button
   turns into a "see less" button and when clicked again, it will only show the first three again. Most likely
   will have to make the height zero until the button is clicked and then make the height 100%. Something like that. 

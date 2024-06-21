@@ -47,7 +47,22 @@ mybutton.onclick = function() {
 }
 
 
+// See more button will show more projects
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("toggleButton");
+    const workList = document.querySelector(".work-list.see-more");
 
+    toggleButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default action of the link
+        if (!workList.classList.contains("show")) {
+            workList.classList.add("show");
+            toggleButton.textContent = "See Less";
+        } else {
+            workList.classList.remove("show");
+            toggleButton.textContent = "See More";
+        }
+    });
+});
 
 
 

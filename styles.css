@@ -275,6 +275,18 @@ nav ul li a:hover::after{
     background: #04d0c1;
 }
 
+.work-list.see-more {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.work-list.see-more.show {
+    max-height: 2000px; /* Set a max-height large enough to contain the content */
+    opacity: 1;
+}
+
 /* --------------contact-------------- */
 
 .contact-left{
